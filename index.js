@@ -47,7 +47,6 @@ function eventDetection(currentDate) {
 	let isChristmas = (currentDate.getMonth() == 11 && currentDate.getDate() >= 25 && currentDate.getDate() <= 26);
 	let isNewYearsCountdown = (currentDate.getMonth() == 11 && currentDate.getDate() == 31);
 	let isNewYears = (currentDate.getMonth() == 0 && currentDate.getDate() == 1);
-	let 
 	// TODO | Add more events
 	if (isAdvent && currentEventEffect != events.AdventSeason) {
 		// If its advent the only active effect can be christmas
