@@ -76,8 +76,9 @@ function eventDetection(currentDate) {
 			removeFallingThings()
 		}
 		currentEventEffect = events.NewYearsCountdown
+	} else if (currentEventEffect == events.NewYearsCountdown) {
 		// Now that we have a clean slate, we can add the countdown decoration
-		eventText.textContent = "New Year in: " + (24 - currentDate.getHours()) + "h " + (60 - currentDate.getMinutes()) + "m " + (60 - currentDate.getSeconds()) + "s";
+		eventText.textContent = "New Year in: " + (23 - currentDate.getHours()) + "h " + (59 - currentDate.getMinutes()) + "m " + (59 - currentDate.getSeconds()) + "s";
 	} else if (isNewYears && currentEventEffect != events.NewYearsEve) {
 		currentEventEffect = events.NewYearsEve
 		addFireworks()
